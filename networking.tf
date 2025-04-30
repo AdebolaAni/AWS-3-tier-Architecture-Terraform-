@@ -155,7 +155,7 @@ resource "aws_route_table_association" "public_subnet_association_az1b" {
   route_table_id = aws_route_table.patty_moore_public_rt.id
 }
 
-#Next item on the list is to create a private app route table for the private subnets
+#Next item on the list is to create a private app route table for the private app subnets
 resource "aws_route_table" "patty_moore_private_app_rt" {
   vpc_id = aws_vpc.patty_moore_vpc.id
 
